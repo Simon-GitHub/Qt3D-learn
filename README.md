@@ -14,10 +14,8 @@
     - [Texture 3](#Texture-3)
     - [FirstCube](#FirstCube)
   - [代码结构](#%E4%BB%A3%E7%A0%81%E7%BB%93%E6%9E%84)
-    - [联系方式:](#%E8%81%94%E7%B3%BB%E6%96%B9%E5%BC%8F)
-          - [请放心联系我，乐于提供咨询服务，也可洽谈有偿技术支持相关事宜。](#%E8%AF%B7%E6%94%BE%E5%BF%83%E8%81%94%E7%B3%BB%E6%88%91%E4%B9%90%E4%BA%8E%E6%8F%90%E4%BE%9B%E5%92%A8%E8%AF%A2%E6%9C%8D%E5%8A%A1%E4%B9%9F%E5%8F%AF%E6%B4%BD%E8%B0%88%E6%9C%89%E5%81%BF%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81%E7%9B%B8%E5%85%B3%E4%BA%8B%E5%AE%9C)
-      - [**打赏**](#%E6%89%93%E8%B5%8F)
-          - [觉得分享的内容还不错, 就请作者喝杯奶茶吧~~](#%E8%A7%89%E5%BE%97%E5%88%86%E4%BA%AB%E7%9A%84%E5%86%85%E5%AE%B9%E8%BF%98%E4%B8%8D%E9%94%99-%E5%B0%B1%E8%AF%B7%E4%BD%9C%E8%80%85%E5%96%9D%E6%9D%AF%E5%A5%B6%E8%8C%B6%E5%90%A7)
+  - [联系方式:](#%E8%81%94%E7%B3%BB%E6%96%B9%E5%BC%8F)
+  - [打赏](#%E6%89%93%E8%B5%8F)
 
 
 # Qt3D-learn
@@ -159,7 +157,7 @@
 <img src="DemoImages/code.png" width="50%" height="50%"/>
 
 
-### 联系方式:
+## 联系方式:
 
 ***
 
@@ -177,15 +175,13 @@
 
 QQ(TIM)、微信二维码
 
-<img src="https://github.com/wentaojia2014/wentaojia2014.github.io/blob/master/img/qq_connect.jpg?raw=true" width="30%" height="30%" /><img src="https://github.com/wentaojia2014/wentaojia2014.github.io/blob/master/img/weixin_connect.jpg?raw=true" width="30%" height="30%" />
+<img src="https://github.com/jaredtao/jaredtao.github.io/blob/master/img/qq_connect.jpg?raw=true" width="30%" height="30%" /><img src="https://github.com/jaredtao/jaredtao.github.io/blob/master/img/weixin_connect.jpg?raw=true" width="30%" height="30%" />
 
-
-###### 请放心联系我，乐于提供咨询服务，也可洽谈有偿技术支持相关事宜。
 
 ***
-#### **打赏**
-<img src="https://github.com/wentaojia2014/wentaojia2014.github.io/blob/master/img/weixin.jpg?raw=true" width="30%" height="30%" /><img src="https://github.com/wentaojia2014/wentaojia2014.github.io/blob/master/img/zhifubao.jpg?raw=true" width="30%" height="30%" />
+## 打赏
+<img src="https://github.com/jaredtao/jaredtao.github.io/blob/master/img/weixin.jpg?raw=true" width="30%" height="30%" /><img src="https://github.com/jaredtao/jaredtao.github.io/blob/master/img/zhifubao.jpg?raw=true" width="30%" height="30%" />
 
-###### 觉得分享的内容还不错, 就请作者喝杯奶茶吧~~
+觉得分享的内容还不错, 就请作者喝杯奶茶吧~~
 ***
 
