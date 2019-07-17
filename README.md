@@ -13,6 +13,7 @@
     - [Texture 2](#Texture-2)
     - [Texture 3](#Texture-3)
     - [FirstCube](#FirstCube)
+    - [MulitCube](#MulitCube)
   - [代码结构](#%E4%BB%A3%E7%A0%81%E7%BB%93%E6%9E%84)
   - [联系方式:](#%E8%81%94%E7%B3%BB%E6%96%B9%E5%BC%8F)
   - [打赏](#%E6%89%93%E8%B5%8F)
@@ -151,6 +152,20 @@
 </div>
 
 一个3D立方体，绕y轴旋转
+
+### MulitCube
+
+<div style="overflow: hidden;justify-content:space-around;">
+  <div style="display: inline-block; max-width: 50%; max-height: 50%" >
+    <img src="DemoImages/8.png"/>
+  </div>
+  <div style="display: inline-block; max-width: 30%; max-height: 30%" >
+    <img src="DemoImages/8_Android.png"/>
+  </div>
+</div>
+
+100个立方体，用NodeInstantiator动态创建，坐标随机、大小随机
+
 
 ## 代码结构
 

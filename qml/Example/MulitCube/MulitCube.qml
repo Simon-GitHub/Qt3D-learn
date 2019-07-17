@@ -57,8 +57,6 @@ DefaultScene {
                 gConfig.frame++
             }
         }
-
-
         NodeInstantiator {  //3D中的节点实例化工厂,用来动态创建
             id: nodeFactory
             function randomMatrix4x4(min, max) {

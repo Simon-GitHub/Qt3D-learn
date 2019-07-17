@@ -33,6 +33,7 @@ int main(int argc, char *argv[])
 #endif
 
     QQmlApplicationEngine engine;
+    engine.addImportPath(app.applicationDirPath());
     engine.rootContext()->setContextProperty("resPath", prefix);
     engine.load(QUrl(prefix + "main.qml"));
     if (engine.rootObjects().isEmpty())
