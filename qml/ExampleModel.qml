@@ -9,5 +9,7 @@ ListModel {
     ListElement { title: "Texture3"}
     ListElement { title: "FirstCube"}
     ListElement { title: "MulitCube"}
+    ListElement { title: "SkyBox"}
     ListElement { title: "TextureCube"}
+
 }

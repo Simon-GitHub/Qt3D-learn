@@ -14,6 +14,7 @@
     - [Texture 3](#Texture-3)
     - [FirstCube](#FirstCube)
     - [MulitCube](#MulitCube)
+    - [SkyBox](#SkyBox)
   - [代码结构](#%E4%BB%A3%E7%A0%81%E7%BB%93%E6%9E%84)
   - [联系方式:](#%E8%81%94%E7%B3%BB%E6%96%B9%E5%BC%8F)
   - [打赏](#%E6%89%93%E8%B5%8F)
@@ -140,6 +141,8 @@
 
 两张纹理的混合。增加了键盘设备和键盘处理，按下键盘Up和Down可以调节混合比例。
 
+坑1：手机上居然不能显示第二张纹理
+
 ### FirstCube
 
 <div style="overflow: hidden;justify-content:space-around;">
@@ -166,6 +169,20 @@
 
 100个立方体，用NodeInstantiator动态创建，坐标随机、大小随机
 
+坑2：异步创建的属性打开就抛异常。
+
+### SkyBox
+
+<div style="overflow: hidden;justify-content:space-around;">
+  <div style="display: inline-block; max-width: 50%; max-height: 50%" >
+    <img src="DemoImages/9.png"/>
+  </div>
+  <div style="display: inline-block; max-width: 30%; max-height: 30%" >
+    <img src="DemoImages/9_Android.png"/>
+  </div>
+</div>
+
+天空盒, SkyboxEntity。注意6张图片的名称。
 
 ## 代码结构
 

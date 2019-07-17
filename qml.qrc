@@ -34,5 +34,12 @@
         <file>qml/Example/Time.qml</file>
         <file>qml/Example/MulitCube/MulitCube.qml</file>
         <file>qml/Example/MulitCube/Cube.qml</file>
+        <file>qml/Example/SkyBox/SkyBox.qml</file>
+        <file>qml/Example/SkyBox/box_negx.jpg</file>
+        <file>qml/Example/SkyBox/box_negy.jpg</file>
+        <file>qml/Example/SkyBox/box_negz.jpg</file>
+        <file>qml/Example/SkyBox/box_posx.jpg</file>
+        <file>qml/Example/SkyBox/box_posy.jpg</file>
+        <file>qml/Example/SkyBox/box_posz.jpg</file>
     </qresource>
 </RCC>
