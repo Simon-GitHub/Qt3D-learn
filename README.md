@@ -184,6 +184,24 @@
 
 天空盒, SkyboxEntity。注意6张图片的名称。
 
+### TextureCube
+
+CuboidGeometry中的默认信息
+
+来自: qt-everywhere-src-5.12.4\qt3d\src\render\geometry\qattribute.cpp
+
+|名称|Attribute Name|
+|----|----|
+|顶点坐标|vertexPosition|
+|法线|vertexNormal|
+|颜色|vertexColor|
+|第一层纹理坐标|vertexTexCoord|
+|切线|vertexTangent|
+|索引|vertexJointIndices|
+|权重|vertexJointWeights|
+|第二层纹理坐标|vertexTexCoord1|
+|第三层纹理坐标|vertexTexCoord2|
+
 ## 代码结构
 
 <img src="DemoImages/code.png" width="50%" height="50%"/>

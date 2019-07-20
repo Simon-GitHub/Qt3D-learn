@@ -24,7 +24,6 @@
         <file>qml/Example/TextureCube/4.jpg</file>
         <file>qml/Example/TextureCube/5.jpg</file>
         <file>qml/Example/TextureCube/6.jpg</file>
-        <file>qml/Example/TextureCube/Texture2.qml</file>
         <file>qml/Example/Triangles/FuncComponent/TriangleDouble.qml</file>
         <file>qml/Example/Triangles/FuncComponent/TriangleIndex.qml</file>
         <file>qml/Example/Triangles/FuncComponent/TriangleMulitColor.qml</file>
@@ -41,5 +40,9 @@
         <file>qml/Example/SkyBox/box_posx.jpg</file>
         <file>qml/Example/SkyBox/box_posy.jpg</file>
         <file>qml/Example/SkyBox/box_posz.jpg</file>
+        <file>qml/Example/TextureCube/TextureCube.qml</file>
+        <file>qml/Example/FPSRootEntity.qml</file>
+        <file>qml/Example/OrbitRootEntity.qml</file>
+        <file>qml/Example/AutoTechnique.qml</file>
     </qresource>
 </RCC>
