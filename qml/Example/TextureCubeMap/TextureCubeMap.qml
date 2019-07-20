@@ -4,6 +4,7 @@ import Qt3D.Render 2.12
 import Qt3D.Input 2.12
 import Qt3D.Extras 2.12
 import Qt3D.Logic 2.12
+import QtQuick 2.12
 import ".."
 
 DefaultScene {
@@ -11,6 +12,7 @@ DefaultScene {
     cameraAspectRatioMode: Scene3D.AutomaticAspectRatio
     OrbitRootEntity {
         position: Qt.vector3d(0, 30, 30)
+
         Entity {
             id: cube
             CuboidMesh {
@@ -23,7 +25,7 @@ DefaultScene {
                 id: cubeTransform
                 matrix: {
                     let m = Qt.matrix4x4()
-                    m.translate(0, 0, 0)
+                    m.translate(0, 7, 0)
                     m.rotate(time.value % 360 * 50, Qt.vector3d(0.5, 1.0, 0.0))
                     return m
                 }
@@ -33,7 +35,7 @@ DefaultScene {
             }
             TextureMaterial {
                 id: cuebMaterial
-                texture: Texture2D {
+                texture: TextureCubeMap {
                     generateMipMaps: true
                     minificationFilter: Texture.Linear
                     magnificationFilter: Texture.Linear

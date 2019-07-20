@@ -18,18 +18,21 @@
     - [TextureCubeWithPlane](#TextureCubeWithPlane)
     - [TextureCubeMap](#TextureCubeMap)
     - [SkyBox](#SkyBox)
+    - [TextureCubeMap](#TextureCubeMap-1)
+    - [Text3D](#Text3D)
   - [代码结构](#%E4%BB%A3%E7%A0%81%E7%BB%93%E6%9E%84)
+  - [部分理解](#%E9%83%A8%E5%88%86%E7%90%86%E8%A7%A3)
   - [联系方式:](#%E8%81%94%E7%B3%BB%E6%96%B9%E5%BC%8F)
   - [打赏](#%E6%89%93%E8%B5%8F)
 
-
 # Qt3D-learn
 
-学习Qt3D的使用。在已有资料的基础上，做一些尝试，改进。
+学习Qt3D的使用。在已有资料的基础上，做一些尝试，改进。算是踩坑笔记。
 
 参考:
 * https://learnopengl-cn.github.io/
 * https://github.com/MidoriYakumo/learnopengl-qt3d
+
 
 ## CI
 | [Linux][lin-link] | [Windows][win-link] |
@@ -60,9 +63,9 @@
   </div>
 </div>
 
-参考Qt官方的例子，做了一个列表，可以点击进入、可以返回。
+参考Qt官方的例子，做了一个列表，可以点击进入、可以返回，也方便在Android设备上运行。
 
-也方便在Android设备上运行。
+按代码实现来说，就是Loader模拟了StackView。
 
 ### HelloScene3D
 
@@ -189,7 +192,9 @@ CuboidMesh立方体贴图。
 
 顺便记录一下研究过的一些东西:
 
-CuboidGeometry默认可以创建立方体的顶点、纹理坐标等几何信息，但是Material总是贴不上。自己重写Geometry和shader代码可以实现，略麻烦）
+CuboidGeometry默认可以创建立方体的顶点、纹理坐标等几何信息，但是Material总是贴不上。
+
+自己重写Geometry和shader代码可以实现立方体贴图，略麻烦
 
 CuboidGeometry中的默认信息(来自: qt-everywhere-src-5.12.4\qt3d\src\render\geometry\qattribute.cpp)
 
@@ -204,6 +209,8 @@ CuboidGeometry中的默认信息(来自: qt-everywhere-src-5.12.4\qt3d\src\rende
 |权重|vertexJointWeights|
 |第二层纹理坐标|vertexTexCoord1|
 |第三层纹理坐标|vertexTexCoord2|
+
+(用不来，后面的TextureCubeMap例子，还是写了自定义Geometry。。。)
 
 ### TextureCubeWithPlane
 
@@ -240,10 +247,54 @@ PhongMaterial冯氏材质是有光晕效果的，其实从前面的立方体开�
 
 天空盒, SkyboxEntity。注意6张图片的名称。
 
+### TextureCubeMap
+
+<div style="overflow: hidden;justify-content:space-around;">
+  <div style="display: inline-block; max-width: 50%; max-height: 50%" >
+    <img src="DemoImages/12.png"/>
+  </div>
+  <div style="display: inline-block; max-width: 30%; max-height: 30%" >
+    <img src="DemoImages/12_Android.png"/>
+  </div>
+</div>
+
+### Text3D
+
+<div style="overflow: hidden;justify-content:space-around;">
+  <div style="display: inline-block; max-width: 50%; max-height: 50%" >
+    <img src="DemoImages/14.png"/>
+  </div>
+  <div style="display: inline-block; max-width: 30%; max-height: 30%" >
+    <img src="DemoImages/14_Android.png"/>
+  </div>
+</div>
+
+3D文字 ExtrudedTextMesh。
+
+2D文字除了Quick/SceneGraph 中的Text，还有FrameGraph中的Text2DEntity,要放在Scene2D场景中。
+
+相当于把2维场景渲染到一张纹理Texture上，再把Texture渲染到3D场景中。
+
+在不需要Quick/SceneGraph的高级场景中，大有用处。比如最近Qt官方公众号上宣传的那几个3D文章，
+
+就提到了高端场景，不要任何Quick，应该就是用这种方式实现的。
+
 ## 代码结构
 
 <img src="DemoImages/code.png" width="50%" height="50%"/>
 
+
+## 部分理解
+
+2019/7/21 TextureCubeMap 这些特殊的纹理贴图功能，都没有实现，C++代码里只有空的类构造、析构函数。。。
+
+我想贴个六面骰子出来，自己撸Geometry + shader吗？ SkyBox效果类似，但是深度处理不一样。
+
+2019/7/21  截至到5.13.0, Qt3D文档上宣传的 刚体、重力、AI寻路 等部分，根本没有任何代码。
+
+只在Bitbucket上面找到一个叫 陈斌的大佬封装的 Bullet Physics QML Plugin。
+
+https://bitbucket.org/csaga77/bullet-physics-qml-plugin/src/master/
 
 ## 联系方式:
 

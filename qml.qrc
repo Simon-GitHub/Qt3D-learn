@@ -45,5 +45,9 @@
         <file>qml/Example/OrbitRootEntity.qml</file>
         <file>qml/Example/AutoTechnique.qml</file>
         <file>qml/Example/TextureCubeWithPlane/TextureCubeWithPlane.qml</file>
+        <file>qml/Example/TextureCubeMap/TextureCubeMap.qml</file>
+        <file>qml/Example/Text3D/Text3D.qml</file>
+        <file>qml/Example/TextureCube/cube.png</file>
+        <file>qml/Example/TextureCube/cube1.png</file>
     </qresource>
 </RCC>

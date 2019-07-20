@@ -12,5 +12,6 @@ ListModel {
     ListElement { title: "SkyBox"}
     ListElement { title: "TextureCube"}
     ListElement { title: "TextureCubeWithPlane"}
+    ListElement { title: "Text3D"}
 
 }
