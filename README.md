@@ -14,6 +14,9 @@
     - [Texture 3](#Texture-3)
     - [FirstCube](#FirstCube)
     - [MulitCube](#MulitCube)
+    - [TextureCube](#TextureCube)
+    - [TextureCubeWithPlane](#TextureCubeWithPlane)
+    - [TextureCubeMap](#TextureCubeMap)
     - [SkyBox](#SkyBox)
   - [代码结构](#%E4%BB%A3%E7%A0%81%E7%BB%93%E6%9E%84)
   - [联系方式:](#%E8%81%94%E7%B3%BB%E6%96%B9%E5%BC%8F)
@@ -171,7 +174,7 @@
 
 坑2：异步创建的属性打开就抛异常。
 
-### SkyBox
+### TextureCube
 
 <div style="overflow: hidden;justify-content:space-around;">
   <div style="display: inline-block; max-width: 50%; max-height: 50%" >
@@ -182,15 +185,15 @@
   </div>
 </div>
 
-天空盒, SkyboxEntity。注意6张图片的名称。
+CuboidMesh立方体贴图。
 
-### TextureCube
+顺便记录一下研究过的一些东西:
 
-CuboidGeometry中的默认信息
+CuboidGeometry默认可以创建立方体的顶点、纹理坐标等几何信息，但是Material总是贴不上。自己重写Geometry和shader代码可以实现，略麻烦）
 
-来自: qt-everywhere-src-5.12.4\qt3d\src\render\geometry\qattribute.cpp
+CuboidGeometry中的默认信息(来自: qt-everywhere-src-5.12.4\qt3d\src\render\geometry\qattribute.cpp)
 
-|名称|Attribute Name|
+|属性|着色器中对应默认名称|
 |----|----|
 |顶点坐标|vertexPosition|
 |法线|vertexNormal|
@@ -201,6 +204,41 @@ CuboidGeometry中的默认信息
 |权重|vertexJointWeights|
 |第二层纹理坐标|vertexTexCoord1|
 |第三层纹理坐标|vertexTexCoord2|
+
+### TextureCubeWithPlane
+
+<div style="overflow: hidden;justify-content:space-around;">
+  <div style="display: inline-block; max-width: 50%; max-height: 50%" >
+    <img src="DemoImages/10.png"/>
+  </div>
+  <div style="display: inline-block; max-width: 30%; max-height: 30%" >
+    <img src="DemoImages/10_Android.png"/>
+  </div>
+</div>
+
+加个地板（PlaneMesh + PhongMaterial），打个光 (PointLight)
+
+注意调整好相机角度或者地板位置，不然默认视角所在平面和地板平行了，就看不见了。
+
+PhongMaterial冯氏材质是有光晕效果的，其实从前面的立方体开始一直都用的冯氏材质。
+
+不加材质就是纯黑色的立方体。这里PointLight的效果更明显一些，就会覆盖冯氏材质的光晕效果。
+
+### TextureCubeMap
+
+
+### SkyBox
+
+<div style="overflow: hidden;justify-content:space-around;">
+  <div style="display: inline-block; max-width: 50%; max-height: 50%" >
+    <img src="DemoImages/11.png"/>
+  </div>
+  <div style="display: inline-block; max-width: 30%; max-height: 30%" >
+    <img src="DemoImages/11_Android.png"/>
+  </div>
+</div>
+
+天空盒, SkyboxEntity。注意6张图片的名称。
 
 ## 代码结构
 

@@ -6,16 +6,22 @@ import Qt3D.Logic 2.12
 Entity {
     id: rootNode
     property color clearColor: Qt.rgba(0.2, 0.3, 0.3, 1.0)
+    property real fieldOfView: 45
+    property real near: 0.1
+    property real far: 100.0
+    property vector3d position: Qt.vector3d(0.0, 0.0, 40.0)
+    property vector3d  upVector: Qt.vector3d(0.0, 1.0, 0.0)
+    property vector3d  viewCenter: Qt.vector3d(0.0, 0.0, 0.0)
     property alias camera: fCamera
     Camera {    //摄像机
         id: fCamera
         projectionType: CameraLens.PerspectiveProjection
-        fieldOfView: 45
-        nearPlane: 0.1
-        farPlane: 1000.0
-        position: Qt.vector3d(0.0, 0.0, 40.0)
-        upVector: Qt.vector3d(0.0, 1.0, 0.0)
-        viewCenter: Qt.vector3d(0.0, 0.0, 0.0)
+        fieldOfView: rootNode.fieldOfView
+        nearPlane: rootNode.near
+        farPlane: rootNode.far
+        position: rootNode.position
+        upVector: rootNode.upVector
+        viewCenter: rootNode.viewCenter
     }
     OrbitCameraController {
         // 轨迹摄像机控制器 大部分3D建模软件都是这种效果

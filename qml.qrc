@@ -44,5 +44,6 @@
         <file>qml/Example/FPSRootEntity.qml</file>
         <file>qml/Example/OrbitRootEntity.qml</file>
         <file>qml/Example/AutoTechnique.qml</file>
+        <file>qml/Example/TextureCubeWithPlane/TextureCubeWithPlane.qml</file>
     </qresource>
 </RCC>

@@ -4,6 +4,7 @@ import Qt3D.Render 2.12
 import Qt3D.Input 2.12
 import Qt3D.Extras 2.12
 import Qt3D.Logic 2.12
+import QtQuick 2.12
 import ".."
 
 DefaultScene {
@@ -12,44 +13,46 @@ DefaultScene {
     OrbitRootEntity {
         position: Qt.vector3d(0, 30, 30)
         /*******************************************************************************/
-//        //Ground
-//        Entity {
-//            PlaneMesh {
-//                id: groundMesh
-//                width: 50
-//                height: width
-//                meshResolution: Qt.size(2, 2)
-//            }
+        //Ground
+        Entity {
+            PlaneMesh {
+                id: groundMesh
+                width: 50
+                height: width
+                meshResolution: Qt.size(2, 2)
+            }
 
-//            Transform {
-//                id: groundTransform
-//                translation: Qt.vector3d(0, 0, 0)
-//            }
-//            PhongMaterial {
-//                id: material
-//            }
-//            components: [
-//                groundMesh,
-//                groundTransform,
-//                material
-//            ]
-//        }
-//        /*******************************************************************************/
-//        //Adding light
-//        Entity {
-//            components: [
-//                PointLight {
-//                    color: "red"
-//                    intensity: 1
-//                    constantAttenuation: 1.0
-//                    linearAttenuation: 0.0
-//                    quadraticAttenuation: 0.0025
-//                },
-//                Transform {
-//                    translation: Qt.vector3d(0.0, 5.0, 5.0)
-//                }
-//            ]
-//        }
+            Transform {
+                id: groundTransform
+                translation: Qt.vector3d(0, 0, 0)
+            }
+            PhongMaterial {
+                id: material
+            }
+            components: [
+                groundMesh,
+                groundTransform,
+                material
+            ]
+        }
+        /*******************************************************************************/
+        //Adding light
+        Entity {
+            components: [
+                PointLight {
+                    id: pointLight
+                    color: "white"
+
+                    intensity: 1
+                    constantAttenuation: 1.0
+                    linearAttenuation: 0.0
+                    quadraticAttenuation: 0.0025
+                },
+                Transform {
+                    translation: Qt.vector3d(0.0, 5.0, 5.0)
+                }
+            ]
+        }
 
 
         Entity {
@@ -64,7 +67,7 @@ DefaultScene {
                 id: cubeTransform
                 matrix: {
                     let m = Qt.matrix4x4()
-                    m.translate(0, 0, 0)
+                    m.translate(0, 7, 0)
                     m.rotate(time.value % 360 * 50, Qt.vector3d(0.5, 1.0, 0.0))
                     return m
                 }
