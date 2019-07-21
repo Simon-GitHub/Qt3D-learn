@@ -11,11 +11,13 @@ Entity {
             buffers: ClearBuffers.ColorDepthBuffer
             clearColor: rootNode.clearColor
 
-            RenderSurfaceSelector {}
-            //            Viewport {
-            //                id: mainViewPort
-            //                normalizedRect: Qt.rect(0, 0, 1, 1)
-            //            }
+            RenderSurfaceSelector {
+                RenderStateSet {
+                    renderStates: DepthTest {
+                        depthFunction: DepthTest.Less
+                    }
+                }
+            }
         }
     }
     InputSettings {

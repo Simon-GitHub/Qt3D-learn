@@ -49,5 +49,6 @@
         <file>qml/Example/Text3D/Text3D.qml</file>
         <file>qml/Example/TextureCube/cube.png</file>
         <file>qml/Example/TextureCube/cube1.png</file>
+        <file>qml/Example/CubeMapGeometryRenderer.qml</file>
     </qresource>
 </RCC>
