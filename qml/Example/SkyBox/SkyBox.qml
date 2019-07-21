@@ -10,7 +10,7 @@ DefaultScene {
     cameraAspectRatioMode: Scene3D.AutomaticAspectRatio
     OrbitRootEntity {
         SkyboxEntity {
-            baseName: gConfig.resPrefix + "Example/SkyBox/box"
+            baseName: gConfig.resPrefix + "Assets/SkyBox/box"
             extension: ".jpg"
         }
 

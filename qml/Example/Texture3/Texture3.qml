@@ -133,7 +133,7 @@ QQ12.Item {
                             }
                             TextureImage {
                                 mipLevel: 0
-                                source: gConfig.resPrefix + "Example/Texture1/qingzhi.jpg"
+                                source: gConfig.resPrefix + "Assets/qingzhi.jpg"
                             }
                         }
                     },
@@ -149,7 +149,7 @@ QQ12.Item {
                             }
                             TextureImage {
                                 mipLevel: 0
-                                source: gConfig.resPrefix + "Example/Texture3/luoli.jpg"
+                                source: gConfig.resPrefix + "Assets/luoli.jpg"
                             }
                         }
                     },

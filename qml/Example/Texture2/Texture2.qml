@@ -122,7 +122,7 @@ DefaultScene {
                     }
                     TextureImage {
                         mipLevel: 0
-                        source: gConfig.resPrefix + "Example/Texture1/qingzhi.jpg"
+                        source: gConfig.resPrefix + "Assets/qingzhi.jpg"
                     }
                 }
             }

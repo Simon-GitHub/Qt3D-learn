@@ -39,9 +39,9 @@ DefaultScene {
                 }
                 RenderStateSet {
                     id: renderStateSet
-                    renderStates: DepthTest {
-                        depthFunction: DepthTest.Less
-                    }
+//                    renderStates: DepthTest {
+//                        depthFunction: DepthTest.Less
+//                    }
                 }
                 CameraSelector {
                     camera: oCamera
@@ -80,7 +80,7 @@ DefaultScene {
         }
         Entity {
             id: cube
-            CubeMapGeometryRenderer {
+            CubeMapGeometryRenderer2 {
                 id: cubeGeo
             }
             Transform {
@@ -100,8 +100,8 @@ DefaultScene {
                     techniques: AutoTechnique {
                         renderPasses: RenderPass {
                             renderStates: [
-                                CullFace { mode: CullFace.NoCulling},
-                                DepthTest{ depthFunction: DepthTest.Less}
+                                CullFace { mode: CullFace.NoCulling}
+//                                DepthTest{ depthFunction: DepthTest.Less}
                             ]
                             shaderProgram: ShaderProgram {
                                 vertexShaderCode:gConfig.shaderVersionString + '
@@ -140,7 +140,7 @@ DefaultScene {
                                         }
                                         TextureImage {
                                             mipLevel: 0
-                                            source: gConfig.resPrefix + "Example/Texture1/qingzhi.jpg"
+                                            source: gConfig.resPrefix + "Assets/Cube/cube.png"
                                         }
                                     }
                                 },

@@ -9,7 +9,6 @@
         <file>qml/Config.qml</file>
         <file>qml/Comp/FPS.qml</file>
         <file>qml/BackItem.qml</file>
-        <file>qml/Example/Texture1/qingzhi.jpg</file>
         <file>qml/Example/Texture1/Texture1.qml</file>
         <file>qml/Example/Texture2/Texture2.qml</file>
         <file>qml/Example/DefaultRootEntity.qml</file>
@@ -18,28 +17,15 @@
         <file>qml/Example/HelloScene3D/HelloScene3D.qml</file>
         <file>qml/Example/HelloScene3D2/HelloScene3D2.qml</file>
         <file>qml/Example/Texture3/Texture3.qml</file>
-        <file>qml/Example/TextureCube/1.jpg</file>
-        <file>qml/Example/TextureCube/2.jpg</file>
-        <file>qml/Example/TextureCube/3.jpg</file>
-        <file>qml/Example/TextureCube/4.jpg</file>
-        <file>qml/Example/TextureCube/5.jpg</file>
-        <file>qml/Example/TextureCube/6.jpg</file>
         <file>qml/Example/Triangles/FuncComponent/TriangleDouble.qml</file>
         <file>qml/Example/Triangles/FuncComponent/TriangleIndex.qml</file>
         <file>qml/Example/Triangles/FuncComponent/TriangleMulitColor.qml</file>
         <file>qml/Example/Triangles/FuncComponent/TriangleVertex.qml</file>
         <file>qml/Example/Triangles/Triangles.qml</file>
-        <file>qml/Example/Texture3/luoli.jpg</file>
         <file>qml/Example/Time.qml</file>
         <file>qml/Example/MulitCube/MulitCube.qml</file>
         <file>qml/Example/MulitCube/Cube.qml</file>
         <file>qml/Example/SkyBox/SkyBox.qml</file>
-        <file>qml/Example/SkyBox/box_negx.jpg</file>
-        <file>qml/Example/SkyBox/box_negy.jpg</file>
-        <file>qml/Example/SkyBox/box_negz.jpg</file>
-        <file>qml/Example/SkyBox/box_posx.jpg</file>
-        <file>qml/Example/SkyBox/box_posy.jpg</file>
-        <file>qml/Example/SkyBox/box_posz.jpg</file>
         <file>qml/Example/TextureCube/TextureCube.qml</file>
         <file>qml/Example/FPSRootEntity.qml</file>
         <file>qml/Example/OrbitRootEntity.qml</file>
@@ -47,8 +33,21 @@
         <file>qml/Example/TextureCubeWithPlane/TextureCubeWithPlane.qml</file>
         <file>qml/Example/TextureCubeMap/TextureCubeMap.qml</file>
         <file>qml/Example/Text3D/Text3D.qml</file>
-        <file>qml/Example/TextureCube/cube.png</file>
-        <file>qml/Example/TextureCube/cube1.png</file>
         <file>qml/Example/CubeMapGeometryRenderer.qml</file>
+        <file>qml/Example/CubeMapGeometryRenderer2.qml</file>
+        <file>qml/Assets/Cube/1.jpg</file>
+        <file>qml/Assets/Cube/2.jpg</file>
+        <file>qml/Assets/Cube/3.jpg</file>
+        <file>qml/Assets/Cube/4.jpg</file>
+        <file>qml/Assets/Cube/5.jpg</file>
+        <file>qml/Assets/Cube/6.jpg</file>
+        <file>qml/Assets/SkyBox/box_negx.jpg</file>
+        <file>qml/Assets/SkyBox/box_negy.jpg</file>
+        <file>qml/Assets/SkyBox/box_negz.jpg</file>
+        <file>qml/Assets/SkyBox/box_posx.jpg</file>
+        <file>qml/Assets/SkyBox/box_posy.jpg</file>
+        <file>qml/Assets/SkyBox/box_posz.jpg</file>
+        <file>qml/Assets/luoli.jpg</file>
+        <file>qml/Assets/qingzhi.jpg</file>
     </qresource>
 </RCC>
