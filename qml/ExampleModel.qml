@@ -12,7 +12,9 @@ ListModel {
     ListElement { title: "SkyBox"}
     ListElement { title: "TextureCube"}
     ListElement { title: "TextureCubeWithPlane"}
-    ListElement { title: "TextureCubeMap"}
+    //ListElement { title: "TextureCubeMap"} TextureCubeMap not support
+    ListElement { title: "TextureCubeMoved"}
     ListElement { title: "Text3D"}
+    ListElement { title: "HelloMesh"}
 
 }

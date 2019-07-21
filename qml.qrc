@@ -31,10 +31,8 @@
         <file>qml/Example/OrbitRootEntity.qml</file>
         <file>qml/Example/AutoTechnique.qml</file>
         <file>qml/Example/TextureCubeWithPlane/TextureCubeWithPlane.qml</file>
-        <file>qml/Example/TextureCubeMap/TextureCubeMap.qml</file>
         <file>qml/Example/Text3D/Text3D.qml</file>
         <file>qml/Example/CubeMapGeometryRenderer.qml</file>
-        <file>qml/Example/CubeMapGeometryRenderer2.qml</file>
         <file>qml/Assets/Cube/1.jpg</file>
         <file>qml/Assets/Cube/2.jpg</file>
         <file>qml/Assets/Cube/3.jpg</file>
@@ -49,5 +47,7 @@
         <file>qml/Assets/SkyBox/box_posz.jpg</file>
         <file>qml/Assets/luoli.jpg</file>
         <file>qml/Assets/qingzhi.jpg</file>
+        <file>qml/Assets/Cube/cube.png</file>
+        <file>qml/Example/HelloMesh/HelloMesh.qml</file>
     </qresource>
 </RCC>
