@@ -100,8 +100,8 @@ DefaultScene {
                     techniques: AutoTechnique {
                         renderPasses: RenderPass {
                             renderStates: [
-                                CullFace { mode: CullFace.NoCulling}
-//                                DepthTest{ depthFunction: DepthTest.Less}
+                                CullFace { mode: CullFace.NoCulling},
+                                DepthTest{ depthFunction: DepthTest.Less}
                             ]
                             shaderProgram: ShaderProgram {
                                 vertexShaderCode:gConfig.shaderVersionString + '

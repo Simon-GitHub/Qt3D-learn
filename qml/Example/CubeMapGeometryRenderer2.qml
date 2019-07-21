@@ -2,6 +2,7 @@ import Qt3D.Core 2.12
 import Qt3D.Render 2.12
 GeometryRenderer {
     id: geometry
+    primitiveType: GeometryRenderer.TriangleFan
     geometry: Geometry {
         boundingVolumePositionAttribute: position
         Attribute {
@@ -25,15 +26,15 @@ GeometryRenderer {
             name: "texCoord"
             buffer: vertexBuffer
         }
-        Attribute {
-            attributeType: Attribute.IndexAttribute
-            vertexBaseType: Attribute.UnsignedShort
-            vertexSize: 3
-            count: 12
-            byteOffset: 0 * 2
-            byteStride: 3 * 2
-            buffer: indexBuffer
-        }
+//        Attribute {
+//            attributeType: Attribute.IndexAttribute
+//            vertexBaseType: Attribute.UnsignedShort
+//            vertexSize: 3
+//            count: 12
+//            byteOffset: 0 * 2
+//            byteStride: 3 * 2
+//            buffer: indexBuffer
+//        }
     }
     Buffer {
         id: vertexBuffer
@@ -74,22 +75,22 @@ GeometryRenderer {
 
                                ])
     }
-    Buffer {
-        id: indexBuffer
-        type: Buffer.IndexBuffer
-        data: new Int16Array([
-                                  0, 1, 2,
-                                  2, 3, 0,
-                                  4, 5, 6,
-                                  6, 7, 4,
-                                  8, 9, 10,
-                                  10, 11, 8,
-                                  12, 13, 14,
-                                  14, 15, 12,
-                                  16, 17, 18,
-                                  18, 19, 16,
-                                  20, 21, 22,
-                                  22, 23, 20
-                              ])
-    }
+//    Buffer {
+//        id: indexBuffer
+//        type: Buffer.IndexBuffer
+//        data: new Int16Array([
+//                                  0, 1, 2,
+//                                  2, 3, 0,
+//                                  4, 5, 6,
+//                                  6, 7, 4,
+//                                  8, 9, 10,
+//                                  10, 11, 8,
+//                                  12, 13, 14,
+//                                  14, 15, 12,
+//                                  16, 17, 18,
+//                                  18, 19, 16,
+//                                  20, 21, 22,
+//                                  22, 23, 20
+//                              ])
+//    }
 }
