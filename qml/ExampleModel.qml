@@ -16,5 +16,6 @@ ListModel {
     ListElement { title: "TextureCubeMoved"}
     ListElement { title: "Text3D"}
     ListElement { title: "HelloMesh"}
+    ListElement { title: "HelloMesh2"}
 
 }
