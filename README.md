@@ -317,6 +317,7 @@ https://bitbucket.org/csaga77/bullet-physics-qml-plugin/src/master/
 | ---- | -------------------------------- |
 |开发理念 | 弘扬鲁班文化，传承工匠精神 |
 | 博客 | https://jaredtao.github.io/ |
+|博客-国内镜像|https://jaredtao.gitee.io|
 |知乎专栏| https://zhuanlan.zhihu.com/TaoQt |
 |微信公众号| Qt进阶之路 |
 |QQ群| 734623697(高质量群，只能交流技术、分享知识、帮助解决实际问题）|
