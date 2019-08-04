@@ -263,10 +263,7 @@ Qt3D的 TextureCubeMap 没有实现，等后续版本再补充。
 
 <div style="overflow: hidden;justify-content:space-around;">
   <div style="display: inline-block; max-width: 50%; max-height: 50%" >
-    <img src="DemoImages/14.png"/>
-  </div>
-  <div style="display: inline-block; max-width: 30%; max-height: 30%" >
-    <img src="DemoImages/14_Android.png"/>
+    <img src="DemoImages/14.gif"/>
   </div>
 </div>
 
