@@ -78,5 +78,6 @@
         <file>qml/Assets/models/textures/Intergalactic Spaceship_rough.jpg</file>
         <file>qml/Assets/models/Intergalactic_Spaceship-(Wavefront).mtl</file>
         <file>qml/Example/HelloMesh2/HelloMesh2.qml</file>
+        <file>qml/Example/Meshes/Meshes.qml</file>
     </qresource>
 </RCC>

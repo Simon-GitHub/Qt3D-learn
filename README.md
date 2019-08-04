@@ -280,10 +280,6 @@ Qt3D的 TextureCubeMap 没有实现，等后续版本再补充。
 
 就提到了高端场景，不要任何Quick，应该就是用这种方式实现的。
 
-## 代码结构
-
-<img src="DemoImages/code.png" width="50%" height="50%"/>
-
 ### HeloMesh
 
 <div style="overflow: hidden;justify-content:space-around;">
@@ -296,6 +292,25 @@ Qt3D的 TextureCubeMap 没有实现，等后续版本再补充。
 </div>
 
 加载模型
+
+### Meshes
+
+<div style="overflow: hidden;justify-content:space-around;">
+  <div style="display: inline-block; max-width: 50%; max-height: 50%" >
+    <img src="DemoImages/16.png"/>
+  </div>
+  <div style="display: inline-block; max-width: 30%; max-height: 30%" >
+    <img src="DemoImages/16_Android.png"/>
+  </div>
+</div>
+
+几何Mesh 的合影
+
+## 代码结构
+
+<img src="DemoImages/code.png" width="50%" height="50%"/>
+
+
 
 ## 部分理解
 

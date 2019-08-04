@@ -16,7 +16,6 @@ DefaultScene {
                 id: mesh1
 //                source: gConfig.resPrefix + "Assets/models/anime_character(high).obj"
                 source: gConfig.resPrefix + "Assets/models/Intergalactic_Spaceship-(Wavefront).obj"
-
             }
             Transform {
                 id: transform1
@@ -28,6 +27,5 @@ DefaultScene {
                 mesh1, transform1,phongMaterial
             ]
         }
-
     }
 }
