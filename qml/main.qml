@@ -1,4 +1,4 @@
-﻿import QtQuick 2.12
+import QtQuick 2.12
 import QtQuick.Window 2.12
 import QtQuick.Controls 2.12
 import "./Comp"
@@ -15,9 +15,6 @@ Window {
         resPrefix: resPath
     }
 
-    ExampleModel {
-        id: exampleModel
-    }
     Loader {
         id: exampleLoader
         width: parent.width
@@ -52,14 +49,14 @@ Window {
     ListView {
         id: lv
         anchors.fill: parent
-        model: exampleModel
+        model: examples
         delegate: ItemButton {
             width: root.width
             height: root.height / 8
-            text: title
+            text: modelData
             iconUrl: gConfig.resPrefix + "Images/icon-go.png"
             onClicked: {
-                let qml = gConfig.resPrefix + String("Example/%1/%1.qml").arg(title)
+                let qml = gConfig.resPrefix + String("Example/%1/%1.qml").arg(modelData)
                 lv.visible = false
                 backItem.visible = true
                 fpsItem.hidden = false

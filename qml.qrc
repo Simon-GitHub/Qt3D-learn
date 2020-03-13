@@ -79,5 +79,21 @@
         <file>qml/Assets/models/Intergalactic_Spaceship-(Wavefront).mtl</file>
         <file>qml/Example/HelloMesh2/HelloMesh2.qml</file>
         <file>qml/Example/Meshes/Meshes.qml</file>
+        <file>qml/Assets/nanosuit/maps/arm_showroom_ddn.png</file>
+        <file>qml/Assets/nanosuit/maps/body_showroom_ddn.png</file>
+        <file>qml/Assets/nanosuit/maps/glass_ddn.png</file>
+        <file>qml/Assets/nanosuit/maps/hand_dif.png</file>
+        <file>qml/Assets/nanosuit/maps/hand_showroom_ddn.png</file>
+        <file>qml/Assets/nanosuit/maps/helmet_showroom_ddn.png</file>
+        <file>qml/Assets/nanosuit/maps/leg_dif.png</file>
+        <file>qml/Assets/nanosuit/maps/leg_showroom_ddn.png</file>
+        <file>qml/Assets/nanosuit/meshes/arms.mesh</file>
+        <file>qml/Assets/nanosuit/meshes/body.mesh</file>
+        <file>qml/Assets/nanosuit/meshes/hands.mesh</file>
+        <file>qml/Assets/nanosuit/meshes/helmet.mesh</file>
+        <file>qml/Assets/nanosuit/meshes/legs.mesh</file>
+        <file>qml/Assets/nanosuit/meshes/lights.mesh</file>
+        <file>qml/Assets/nanosuit/meshes/visor.mesh</file>
+        <file>qml/Example/Nanosuit/Nanosuit.qml</file>
     </qresource>
 </RCC>

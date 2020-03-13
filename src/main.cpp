@@ -3,6 +3,8 @@
 #include <QSurfaceFormat>
 #include <QOpenGLContext>
 #include <QQmlContext>
+#include <QDir>
+#include <QDebug>
 int main(int argc, char *argv[])
 {
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
@@ -27,14 +29,20 @@ int main(int argc, char *argv[])
 ////    format.setSwapInterval(0); // Full speed rendering
 //    QSurfaceFormat::setDefaultFormat(format);
 
-    QString prefix = "qrc:/qml/";
-#ifdef _DEBUG
-    prefix = QString("file:///%1/../qml/").arg(app.applicationDirPath());
-#endif
-
+    QString prefix = QmlPrefixPath;
+    QString path = prefix;
+    if (prefix.startsWith("file:///")) {
+        path.remove("file:///");
+    } else if (prefix.startsWith("qrc:")) {
+        path.remove("qrc");
+    }
+    QDir dir(path + "Example");
+    auto examples = dir.entryList(QDir::Dirs | QDir::NoDotAndDotDot);
+    qWarning() << path << examples;
     QQmlApplicationEngine engine;
-    engine.addImportPath(app.applicationDirPath());
+    engine.addImportPath(prefix);
     engine.rootContext()->setContextProperty("resPath", prefix);
+    engine.rootContext()->setContextProperty("examples", examples);
     engine.load(QUrl(prefix + "main.qml"));
     if (engine.rootObjects().isEmpty())
         return -1;
