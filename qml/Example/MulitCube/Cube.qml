@@ -7,6 +7,7 @@ Entity {
     components: [
         PhongMaterial {
             id: phoneMaterial
+            diffuse: picker.pressed ? Qt.rgba(1.0, 0.0, 0.0, 1.0) : Qt.rgba(0.3, 0.2, 0.4, 1.0)
         },
         CuboidMesh {
             id: cube
@@ -16,6 +17,9 @@ Entity {
         },
         Transform {
             matrix: transform
+        },
+        ObjectPicker {
+            id: picker
         }
     ]
 }

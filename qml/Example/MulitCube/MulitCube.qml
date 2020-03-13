@@ -21,7 +21,7 @@ DefaultScene {
                 mat.translate(Qt.vector3d(x, y, z))
                 return mat
             }
-            model: 100
+            model: 10
 
             // 异步开关有bug，直接抛越界异常
             // asynchronous: true
